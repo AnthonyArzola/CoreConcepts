@@ -15,6 +15,7 @@ This project was primarily influenced by the following [StackOverflow question a
   - Sorting
     - Bubble Sort
     - Insertion Sort
+    - Selection Sort
   - Searching
     - Binary Search
 
@@ -30,7 +31,7 @@ This project was primarily influenced by the following [StackOverflow question a
 ```csharp
 int[] array = new int[] { 1, 2, 15, 35, 46, 78, 100 };
 int index = BinarySearch.Search(array, 35);
-// Would return 3
+// Will return 3
 ```
 
 * Bubble Sort
@@ -45,4 +46,11 @@ BubbleSort.Sort(unsortedArray);
 int[] unsortedArray = new int[] { 38, 27, 43, 3, 9, 82, 10 };
 InsertionSort.Sort(unsortedArray);
 // Will produce [3, 9, 10, 27, 38, 43, 82]
+```
+
+* Selection Sort
+```csharp
+int[] unsortedArray = new int[] { 300, 5, 1, 8, 100, 2, 10 };
+InsertionSort.Sort(unsortedArray);
+// Will produce [1, 2, 5, 8, 10, 100, 300]
 ```

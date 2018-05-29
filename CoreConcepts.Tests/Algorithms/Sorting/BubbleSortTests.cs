@@ -29,14 +29,15 @@ namespace CoreConcepts.Tests.Algorithms.Sorting
         [Fact]
         public void Test_Sorting()
         {
-            // Sort using CoreConcepts and framework
+            // Sort using CoreConcepts
             int[] array = new[] { 300, 5, 1, 8, 100, 2, 10 };
             BubbleSort.Sort(array);
 
+            // Sort using framework implementation
             int[] array2 = new[] { 300, 5, 1, 8, 100, 2, 10 };
             Array.Sort(array2);
 
-            // Compare the results
+            // Compare results
             Assert.True(array.SequenceEqual(array2), "Sorted arrays do not match.");
         }
     }
