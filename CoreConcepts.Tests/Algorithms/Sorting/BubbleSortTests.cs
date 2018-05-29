@@ -12,32 +12,32 @@ namespace CoreConcepts.Tests.Algorithms.Sorting
         [Fact]
         public void Test_Empty_Array()
         {
-            int[] array = new int[]{ };
+            int[] emptyArray = new int[]{ };
 
             try
             {
-                BubbleSort.Sort(array);
+                BubbleSort.Sort(emptyArray);
             }
             catch (Exception ex)
             {
-                Assert.True(false, "Calling sort on empty array raised an exception.");
+                Assert.True(false, $"Unable to perform sort on empty array. Exception is: {ex.Message}");
             }
 
-            Assert.Empty(array);
+            Assert.Empty(emptyArray);
         }
 
         [Fact]
         public void Test_Sorting()
         {
-            int[] array = new[] { 300, 5, 1, 8, 100, 2, 10 };
-            int[] array2 = new[] { 300, 5, 1, 8, 100, 2, 10 };
-
             // Sort using CoreConcepts and framework
+            int[] array = new[] { 300, 5, 1, 8, 100, 2, 10 };
             BubbleSort.Sort(array);
+
+            int[] array2 = new[] { 300, 5, 1, 8, 100, 2, 10 };
             Array.Sort(array2);
 
             // Compare the results
-            Assert.True(array.SequenceEqual(array2));
+            Assert.True(array.SequenceEqual(array2), "Sorted arrays do not match.");
         }
     }
 }
