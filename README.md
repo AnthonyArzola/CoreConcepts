@@ -19,7 +19,11 @@ This project was primarily influenced by the following [StackOverflow question a
   - Searching
     - Binary Search
 
-* Data structures (coming soon!)
+* Data structures
+  - Graphs
+    - Undirected (implemented using Adjacency List)
+      - Depth First Search
+      - Breadht First Search 
 
 ## Notes
 * The goal of this project is to implement solutions, __not__ leverage LINQ or make use of latest-and-greatest [syntactic sugar](https://en.wikipedia.org/wiki/Syntactic_sugar) provided by .NET Core to reduce code.
@@ -51,6 +55,6 @@ InsertionSort.Sort(unsortedArray);
 * Selection Sort
 ```csharp
 int[] unsortedArray = new int[] { 300, 5, 1, 8, 100, 2, 10 };
-InsertionSort.Sort(unsortedArray);
+SelectionSort.Sort(unsortedArray);
 // Will produce [1, 2, 5, 8, 10, 100, 300]
 ```
