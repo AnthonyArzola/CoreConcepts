@@ -23,7 +23,7 @@ This project was primarily influenced by the following [StackOverflow question a
   - Graphs
     - Undirected (implemented using Adjacency List)
       - Depth First Search
-      - Breadht First Search 
+      - Breadth First Search
 
 ## Notes
 * The goal of this project is to implement solutions, __not__ leverage LINQ or make use of latest-and-greatest [syntactic sugar](https://en.wikipedia.org/wiki/Syntactic_sugar) provided by .NET Core to reduce code.
