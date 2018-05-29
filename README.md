@@ -26,9 +26,23 @@ This project was primarily influenced by the following [StackOverflow question a
 * It should also be noted, I have __not__ provided a solution to '[RegEx match open tags except XHTML self-contained tags](https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags)'. Use an XML parser instead :-)
 
 ## Sample
-To perform a Binary Search, call static method `Search` on `BinarySearch` class. If value is found, it will return index or -1.
-
+* Binary Search
 ```csharp
 int[] array = new int[] { 1, 2, 15, 35, 46, 78, 100 };
-int index = BinarySearch.Search(array, 35); // Would return 3
+int index = BinarySearch.Search(array, 35);
+// Would return 3
+```
+
+* Bubble Sort
+```csharp
+int[] unsortedArray = new[] { 300, 5, 1, 8, 100, 2, 10 };
+BubbleSort.Sort(unsortedArray);
+// Will produce [1, 2, 5, 8, 10, 100, 300]
+```
+
+* Insertion Sort
+```csharp
+int[] unsortedArray = new int[] { 38, 27, 43, 3, 9, 82, 10 };
+InsertionSort.Sort(unsortedArray);
+// Will produce [3, 9, 10, 27, 38, 43, 82]
 ```
