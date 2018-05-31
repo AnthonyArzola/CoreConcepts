@@ -13,15 +13,15 @@ This project was primarily influenced by the following [StackOverflow question a
 ## Implementations
 * Algorithms
   - Sorting
-    - Bubble Sort
-    - Insertion Sort
-    - Selection Sort
+    - [Bubble Sort](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/BubbleSort.cs)
+    - [Insertion Sort](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/InsertionSort.cs)
+    - [Selection Sort](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/SelectionSort.cs)
   - Searching
-    - Binary Search
+    - [Binary Search](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Searching/BInarySearch.cs)
 
 * Data structures
   - Graphs
-    - Undirected (implemented using Adjacency List)
+    - [Undirected](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/DataStructures/Graphs/UndirectedGraph.cs) (implemented using Adjacency List)
       - Depth First Search
       - Breadth First Search
 
