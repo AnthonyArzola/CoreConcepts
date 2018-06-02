@@ -16,14 +16,23 @@ This project was primarily influenced by the following [StackOverflow question a
     - [Bubble Sort](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/BubbleSort.cs)
     - [Insertion Sort](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/InsertionSort.cs)
     - [Selection Sort](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/SelectionSort.cs)
+    - Merge Sort (coming soon!)
+    - Quick Sort (coming soon!)
   - Searching
     - [Binary Search](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Searching/BInarySearch.cs)
 
 * Data structures
+  - Linked List (coming soon!)
+  - Double Linked List (coming soon!)
+  - Queue (coming soon!)
+  - Stack (coming soon!)
   - Graphs
     - [Undirected](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/DataStructures/Graphs/UndirectedGraph.cs) (implemented using Adjacency List)
       - Depth First Search
       - Breadth First Search
+    - Directed (coming soon!)
+  - Min Heap (coming soon!)
+  - Max Heap (coming soon!)
 
 ## Notes
 * The goal of this project is to implement solutions, __not__ leverage LINQ or make use of latest-and-greatest [syntactic sugar](https://en.wikipedia.org/wiki/Syntactic_sugar) provided by .NET Core to reduce code.
