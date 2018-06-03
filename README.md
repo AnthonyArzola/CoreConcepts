@@ -13,13 +13,13 @@ This project was primarily influenced by the following [StackOverflow question a
 ## Implementations
 * Algorithms
   - Sorting
-    - [Bubble Sort](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/BubbleSort.cs)
-    - [Insertion Sort](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/InsertionSort.cs)
-    - [Selection Sort](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/SelectionSort.cs)
-    - Merge Sort (coming soon!)
+    - Bubble Sort [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/BubbleSort.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/Algorithms/Sorting/BubbleSortTests.cs)
+    - Insertion Sort [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/InsertionSort.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/Algorithms/Sorting/InsertionSortTests.cs)
+    - Selection Sort [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/SelectionSort.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/Algorithms/Sorting/SelectionSortTests.cs)
+    - Merge Sort [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/MergeSort.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/Algorithms/Sorting/MergeSortTests.cs)
     - Quick Sort (coming soon!)
   - Searching
-    - [Binary Search](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Searching/BInarySearch.cs)
+    - Binary Search [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Searching/BInarySearch.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/DataStructures/Graphs/UndirectedGraphTests.cs)
 
 * Data structures
   - Linked List (coming soon!)
