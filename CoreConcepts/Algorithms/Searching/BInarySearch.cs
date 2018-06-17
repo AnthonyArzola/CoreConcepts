@@ -33,7 +33,7 @@
         {
             if (leftIndex <= rightIndex)
             {
-                // Determin mid-point and check if array value is equal to seach value
+                // Determine mid-point and check if array value is equal to seach value
                 int middleIndex = (leftIndex + rightIndex) / 2;
                 
                 if (array[middleIndex] == value)
