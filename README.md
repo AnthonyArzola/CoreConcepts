@@ -22,7 +22,7 @@ This project was primarily influenced by the following [StackOverflow question a
     - Binary Search [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Searching/BInarySearch.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/DataStructures/Graphs/UndirectedGraphTests.cs)
 
 * Data structures
-  - Linked List (coming soon!)
+  - Linked List [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/DataStructures/Linear/LinkedList.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/DataStructures/Linear/LinkedListTests.cs)
   - Double Linked List (coming soon!)
   - Queue (coming soon!)
   - Stack (coming soon!)
