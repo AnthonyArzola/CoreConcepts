@@ -28,8 +28,8 @@ This project was primarily influenced by the following [StackOverflow question a
   - Stack (coming soon!)
   - Graphs
     - [Undirected](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/DataStructures/Graphs/UndirectedGraph.cs) (implemented using Adjacency List)
-      - Depth First Search
-      - Breadth First Search
+      - Depth First Search [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/de954a7c0d8aec10460a7c16d6a2b1ee6eb0967f/CoreConcepts/DataStructures/Graphs/UndirectedGraph.cs#L79)
+      - Breadth First Search [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/de954a7c0d8aec10460a7c16d6a2b1ee6eb0967f/CoreConcepts/DataStructures/Graphs/UndirectedGraph.cs#L158)
     - Directed (coming soon!)
   - Min Heap (coming soon!)
   - Max Heap (coming soon!)
