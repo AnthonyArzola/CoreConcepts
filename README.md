@@ -17,7 +17,7 @@ This project was primarily influenced by the following [StackOverflow question a
     - Insertion Sort [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/InsertionSort.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/Algorithms/Sorting/InsertionSortTests.cs)
     - Selection Sort [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/SelectionSort.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/Algorithms/Sorting/SelectionSortTests.cs)
     - Merge Sort [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/MergeSort.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/Algorithms/Sorting/MergeSortTests.cs)
-    - Quick Sort (coming soon!)
+    - Quick Sort [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/QuickSort.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/Algorithms/Sorting/QuickSortTests.cs)
   - Searching
     - Binary Search [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Searching/BInarySearch.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/DataStructures/Graphs/UndirectedGraphTests.cs)
 

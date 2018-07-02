@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace CoreConcepts.Algorithms.Sorting
 {
     public class QuickSort
