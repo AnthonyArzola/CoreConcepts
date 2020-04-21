@@ -25,7 +25,7 @@ This project was primarily influenced by the following [StackOverflow question a
   - Linked List [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/DataStructures/Linear/LinkedList.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/DataStructures/Linear/LinkedListTests.cs)
   - Double Linked List (coming soon!)
   - Queue (coming soon!)
-  - Stack [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/DataStructures/Linear/Stack.cs) and [test](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/DataStructures/Linear/StackTests.cs)
+  - Stack [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/DataStructures/Linear/Stack.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/DataStructures/Linear/StackTests.cs)
   - Graphs
     - [Undirected](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/DataStructures/Graphs/UndirectedGraph.cs) (implemented using Adjacency List)
       - Depth First Search [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/de954a7c0d8aec10460a7c16d6a2b1ee6eb0967f/CoreConcepts/DataStructures/Graphs/UndirectedGraph.cs#L79)
@@ -66,4 +66,22 @@ InsertionSort.Sort(unsortedArray);
 int[] unsortedArray = new int[] { 300, 5, 1, 8, 100, 2, 10 };
 SelectionSort.Sort(unsortedArray);
 // Will produce [1, 2, 5, 8, 10, 100, 300]
+```
+
+* Stack
+```csharp
+using Core = CoreConcepts.DataStructures.Linear;
+
+Core.Stack<int> stack = new Core.Stack<int>();
+
+int itemsToPush = 5;
+for (int i = 1; i <= itemsToPush; i++)
+{
+    stack.Push(i);
+}
+
+for (int i = itemsToPush; i > 0; i--)
+{
+    int value = stack.Pop();
+}
 ```
