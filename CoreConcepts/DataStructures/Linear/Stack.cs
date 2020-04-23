@@ -6,9 +6,15 @@ namespace CoreConcepts.DataStructures.Linear
 {
     public class Stack<T>: IEnumerable<T>
     {
+        #region "Data Members"
+
         private System.Collections.Generic.LinkedList<T> List = new System.Collections.Generic.LinkedList<T>();
 
-        #region "Public methods" 
+        public int Count => List.Count;
+
+        #endregion
+
+        #region "Public methods"
 
         public bool Push(T item)
         {
@@ -40,11 +46,6 @@ namespace CoreConcepts.DataStructures.Linear
         public void Clear()
         {
             List.Clear();
-        }
-
-        public int Count()
-        {
-            return List.Count;
         }
 
         #endregion

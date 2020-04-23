@@ -11,7 +11,7 @@ namespace CoreConcepts.DataStructures.Linear
 
         public LinkNode<T> Last { get; private set; }
 
-        private int Count { get; set; }
+        public int Count { get; private set; }
 
         #endregion
 

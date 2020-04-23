@@ -15,7 +15,7 @@ namespace CoreConcepts.Tests.DataStructures.Linear
             {
                 stack.Push(i);
             }
-            Assert.Equal(itemsToPush, stack.Count());
+            Assert.Equal(itemsToPush, stack.Count);
         }
 
         [Fact]
@@ -42,7 +42,7 @@ namespace CoreConcepts.Tests.DataStructures.Linear
                 Assert.Equal(i, value);
             }
 
-            Assert.Equal(0, stack.Count());
+            Assert.Equal(0, stack.Count);
         }
 
         [Fact]
@@ -56,7 +56,7 @@ namespace CoreConcepts.Tests.DataStructures.Linear
             }
             stack.Clear();
 
-            Assert.Equal(0, stack.Count());
+            Assert.Equal(0, stack.Count);
         }
 
     }
