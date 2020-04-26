@@ -14,7 +14,21 @@ namespace CoreConcepts.DataStructures.Linear
 
         #endregion
 
-        #region "Public methods"
+        #region "Constructors"
+
+        public Stack()
+        {
+            // NOP
+        }
+
+        public Stack(T value)
+        {
+            Push(value);
+        }
+
+        #endregion
+
+        #region "Public Methods"
 
         public bool Push(T item)
         {

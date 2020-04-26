@@ -7,6 +7,22 @@ namespace CoreConcepts.Tests.DataStructures.Linear
     public class StackTests
     {
         [Fact]
+        public void Test_Default_Constructor()
+        {
+            Core.Stack<int> stack = new Core.Stack<int>();
+            Assert.Empty(stack);
+            Assert.Equal(0, stack.Count);
+        }
+
+        [Fact]
+        public void Test_Constructor_With_Initial_Value()
+        {
+            Core.Stack<int> stack = new Core.Stack<int>(5);
+            Assert.NotEmpty(stack);
+            Assert.Equal(1, stack.Count);
+        }
+
+        [Fact]
         public void Test_Push()
         {
             Core.Stack<int> stack = new Core.Stack<int>();
