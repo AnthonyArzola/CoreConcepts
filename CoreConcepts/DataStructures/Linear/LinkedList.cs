@@ -53,21 +53,18 @@ namespace CoreConcepts.DataStructures.Linear
         /// <param name="node"></param>
         public void AddFirst(LinkNode<T> node)
         {
-            // Save previous First
+            // Copy first node
             LinkNode<T> previousFirst = First;
 
-            // Make node new First
+            // Make incoming `node` first
             First = node;
 
-            // Point new First to old First
+            // New first node will now point to previous first node
             First.Next = previousFirst;
 
             // If this is a new linked list,
             // First and Last are the same
-            if (Last == null)
-            {
-                Last = First;
-            }
+            if (Last == null) { Last = First; }
 
             Count++;
         }
@@ -89,11 +86,13 @@ namespace CoreConcepts.DataStructures.Linear
         {
             if (First == null && Last == null)
             {
+                // New linked list. Incoming `node` is First and Last
                 First = node;
                 Last = First;
             }
             else
             {
+                // Point last node to incoming `node`. Set `node` as Last.
                 Last.Next = node;
                 Last = node;
             }
@@ -106,6 +105,7 @@ namespace CoreConcepts.DataStructures.Linear
             if (Count == 0)
                 return;
 
+            // Update First pointer
             First = First.Next;
             Count--;
 
