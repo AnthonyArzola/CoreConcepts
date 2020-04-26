@@ -7,6 +7,22 @@ namespace CoreConcepts.Tests.DataStructures.Linear
     public class QueueTests
     {
         [Fact]
+        public void Test_Default_Constructor()
+        {
+            Core.Queue<int> queue = new Core.Queue<int>();
+            Assert.Empty(queue);
+            Assert.Equal(0, queue.Count);
+        }
+
+        [Fact]
+        public void Test_Constructor_With_Initial_Value()
+        {
+            Core.Queue<int> queue = new Core.Queue<int>(55);
+            Assert.NotEmpty(queue);
+            Assert.Equal(1, queue.Count);
+        }
+
+        [Fact]
         public void Test_Add()
         {
             Core.Queue<int> queue = new Core.Queue<int>();

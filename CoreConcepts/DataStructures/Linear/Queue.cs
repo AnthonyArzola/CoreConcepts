@@ -11,6 +11,20 @@ namespace CoreConcepts.DataStructures.Linear
 
         #endregion
 
+        #region "Constructors"
+
+        public Queue()
+        {
+            // NOP
+        }
+
+        public Queue(T value)
+        {
+            Enqueue(value);
+        }
+
+        #endregion
+
         #region "Public Properties"
 
         /// <summary>
@@ -59,6 +73,9 @@ namespace CoreConcepts.DataStructures.Linear
             }
         }
 
+        /// <summary>
+        /// Clear queue.
+        /// </summary>
         public void Clear()
         {
             LinkedList.Clear();
