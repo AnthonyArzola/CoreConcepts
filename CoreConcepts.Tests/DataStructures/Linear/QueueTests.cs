@@ -41,5 +41,19 @@ namespace CoreConcepts.Tests.DataStructures.Linear
             Assert.Equal(0, queue.Count);
         }
 
+        [Fact]
+        public void Test_Clear()
+        {
+            Core.Queue<int> queue = new Core.Queue<int>();
+            queue.Enqueue(5);
+            queue.Enqueue(10);
+            Assert.Equal(2, queue.Count);
+
+            queue.Clear();
+            Assert.Equal(0, queue.Count);
+            Assert.Empty(queue);
+
+        }
+
     }
 }

@@ -59,6 +59,11 @@ namespace CoreConcepts.DataStructures.Linear
             }
         }
 
+        public void Clear()
+        {
+            LinkedList.Clear();
+        }
+
         #endregion
 
         #region "IEnumerable Methods"
