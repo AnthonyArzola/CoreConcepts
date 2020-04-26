@@ -18,7 +18,7 @@ namespace CoreConcepts.DataStructures.Linear
 
         public bool Push(T item)
         {
-            LinkedListNode<T> addedItem = List.AddFirst(item);
+            LinkedListNode<T> addedItem = List.AddLast(item);
             return (addedItem != null);
         }
 
@@ -28,7 +28,7 @@ namespace CoreConcepts.DataStructures.Linear
             {
                 throw new Exception("Unable to peek. Stack is empty");
             }
-            return List.First.Value;
+            return List.Last.Value;
         }
 
         public T Pop()
@@ -38,8 +38,8 @@ namespace CoreConcepts.DataStructures.Linear
                 throw new Exception("Unable to pop item. Stack is empty.");
             }
 
-            T topItem = List.First.Value;
-            List.RemoveFirst();
+            T topItem = List.Last.Value;
+            List.RemoveLast();
             return topItem;
         }
 
