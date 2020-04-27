@@ -31,9 +31,9 @@ namespace CoreConcepts.DataStructures.Graphs
 
         #endregion
 
-        #region Methods
+        #region Private Methods
 
-        public void AddVertex(int vertex)
+        private void AddVertex(int vertex)
         {
             if (!AdjacencyList.ContainsKey(vertex))
             {
@@ -42,7 +42,7 @@ namespace CoreConcepts.DataStructures.Graphs
             }
         }
 
-        public void AddEdge(Tuple<int, int> edge)
+        private void AddEdge(Tuple<int, int> edge)
         {
             // Since we are modeling undirected graph,
             // record both side of the edge/connection
@@ -58,6 +58,10 @@ namespace CoreConcepts.DataStructures.Graphs
                 //Console.WriteLine($"Vertex {edge.Item2}: added edge {edge.Item1}");
             }
         }
+
+        #endregion
+
+        #region Public Methods
 
         public string VerticesAndEdgesToString()
         {
@@ -76,6 +80,12 @@ namespace CoreConcepts.DataStructures.Graphs
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Searches graph by performing depth-first-search.
+        /// </summary>
+        /// <param name="startingVertex">Initial vertex.</param>
+        /// <param name="findVertex">Vertex to search for.</param>
+        /// <returns>Tuple indicating if vertex was found and vertices searched.</returns>
         public Tuple<bool, List<int>> DepthFirstSearch(int startingVertex, int findVertex)
         {
             // Keep track of visited vertices
@@ -120,6 +130,11 @@ namespace CoreConcepts.DataStructures.Graphs
             return Tuple.Create(vertexFound, visited);
         }
 
+        /// <summary>
+        /// Traverses graph using breadth-first approach.
+        /// </summary>
+        /// <param name="startingVertex">Starting vertex.</param>
+        /// <returns></returns>
         public List<int> BreadthFirstTraversal(int startingVertex)
         {
             // Keep track of visited vertices
@@ -155,6 +170,12 @@ namespace CoreConcepts.DataStructures.Graphs
             return visited;
         }
 
+        /// <summary>
+        /// Searches graph by performing breadth-first-search.
+        /// </summary>
+        /// <param name="startingVertex">Starting vertex.</param>
+        /// <param name="findVertex">Vertex to search for.</param>
+        /// <returns></returns>
         public Tuple<bool, List<int>> BreadthFirstSearch(int startingVertex, int findVertex)
         {
             // Keep track of visited vertices
