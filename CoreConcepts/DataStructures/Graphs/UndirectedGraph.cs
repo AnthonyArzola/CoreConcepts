@@ -14,7 +14,7 @@ namespace CoreConcepts.DataStructures.Graphs
 
         #region Creation
 
-        public UndirectedGraph(int[] vertices, IEnumerable<Tuple<int, int>> edges)
+        public UndirectedGraph(int[] vertices, IEnumerable<(int leftVertex, int rightVertex)> edges)
         {
             AdjacencyList = new Dictionary<int, HashSet<int>>();
 
@@ -23,7 +23,7 @@ namespace CoreConcepts.DataStructures.Graphs
                 AddVertex(vertex);
             }
 
-            foreach (Tuple<int, int> edge in edges)
+            foreach ((int leftV, int rightV) edge in edges)
             {
                 AddEdge(edge);
             }
@@ -42,20 +42,20 @@ namespace CoreConcepts.DataStructures.Graphs
             }
         }
 
-        private void AddEdge(Tuple<int, int> edge)
+        private void AddEdge((int leftVertex, int rightVertex) edge)
         {
             // Since we are modeling undirected graph,
             // record both side of the edge/connection
-            if (AdjacencyList.ContainsKey(edge.Item1) && !AdjacencyList[edge.Item1].Contains(edge.Item2))
+            if (AdjacencyList.ContainsKey(edge.leftVertex) && !AdjacencyList[edge.leftVertex].Contains(edge.rightVertex))
             {
-                AdjacencyList[edge.Item1].Add(edge.Item2);
-                //Console.WriteLine($"Vertex {edge.Item1}: added edge {edge.Item2}");
+                AdjacencyList[edge.leftVertex].Add(edge.rightVertex);
+                //Console.WriteLine($"Vertex {edge.leftVertex}: added edge {edge.rightVertex}");
             }
 
-            if (AdjacencyList.ContainsKey(edge.Item2) && !AdjacencyList[edge.Item2].Contains(edge.Item1))
+            if (AdjacencyList.ContainsKey(edge.rightVertex) && !AdjacencyList[edge.rightVertex].Contains(edge.leftVertex))
             {
-                AdjacencyList[edge.Item2].Add(edge.Item1);
-                //Console.WriteLine($"Vertex {edge.Item2}: added edge {edge.Item1}");
+                AdjacencyList[edge.rightVertex].Add(edge.leftVertex);
+                //Console.WriteLine($"Vertex {edge.rightVertex}: added edge {edge.leftVertex}");
             }
         }
 
@@ -86,7 +86,7 @@ namespace CoreConcepts.DataStructures.Graphs
         /// <param name="startingVertex">Initial vertex.</param>
         /// <param name="findVertex">Vertex to search for.</param>
         /// <returns>Tuple indicating if vertex was found and vertices searched.</returns>
-        public Tuple<bool, List<int>> DepthFirstSearch(int startingVertex, int findVertex)
+        public (bool vertexFound, List<int> visitedVertices) DepthFirstSearch(int startingVertex, int findVertex)
         {
             // Keep track of visited vertices
             List<int> visited = new List<int>();
@@ -94,7 +94,7 @@ namespace CoreConcepts.DataStructures.Graphs
 
             // Guard against vertex that doesn't exist
             if (!AdjacencyList.ContainsKey(startingVertex))
-                return Tuple.Create(vertexFound, visited);
+                return (vertexFound, visited);
 
             // Use stack to track vertices found, but not visisted yet
             Stack<int> stack = new Stack<int>();
@@ -127,7 +127,7 @@ namespace CoreConcepts.DataStructures.Graphs
                 }
             }
 
-            return Tuple.Create(vertexFound, visited);
+            return (vertexFound, visited);
         }
 
         /// <summary>
@@ -176,7 +176,7 @@ namespace CoreConcepts.DataStructures.Graphs
         /// <param name="startingVertex">Starting vertex.</param>
         /// <param name="findVertex">Vertex to search for.</param>
         /// <returns></returns>
-        public Tuple<bool, List<int>> BreadthFirstSearch(int startingVertex, int findVertex)
+        public (bool vertexFound, List<int> visitedVertices) BreadthFirstSearch(int startingVertex, int findVertex)
         {
             // Keep track of visited vertices
             List<int> visited = new List<int>();
@@ -184,7 +184,7 @@ namespace CoreConcepts.DataStructures.Graphs
 
             // Guard against vertex not in the graph
             if (!AdjacencyList.ContainsKey(startingVertex))
-                return Tuple.Create(vertexFound, visited);
+                return (vertexFound, visited);
 
             Queue<int> queue = new Queue<int>();
             queue.Enqueue(startingVertex);
@@ -216,7 +216,7 @@ namespace CoreConcepts.DataStructures.Graphs
                 }
             }
 
-            return Tuple.Create(vertexFound, visited);
+            return (vertexFound, visited);
         }
 
         #endregion
