@@ -20,6 +20,8 @@ This project was primarily influenced by the following [StackOverflow question a
     - Quick Sort [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Sorting/QuickSort.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/Algorithms/Sorting/QuickSortTests.cs)
   - Searching
     - Binary Search [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/Algorithms/Searching/BInarySearch.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/DataStructures/Graphs/UndirectedGraphTests.cs)
+    - Depth First Search [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/DataStructures/Graphs/UndirectedGraph.cs#L89)
+    - Breadth First Search [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/DataStructures/Graphs/UndirectedGraph.cs#L179)
 
 * Data structures
   - Linked List [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/DataStructures/Linear/LinkedList.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/DataStructures/Linear/LinkedListTests.cs)
