@@ -29,7 +29,7 @@ This project was primarily influenced by the following [StackOverflow question a
   - Queue [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/DataStructures/Linear/Queue.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/DataStructures/Linear/QueueTests.cs)
   - Stack [implementation](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/DataStructures/Linear/Stack.cs) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/DataStructures/Linear/StackTests.cs)
   - Graph
-    - [Undirected](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/DataStructures/Graphs/UndirectedGraph.cs) (implemented using Adjacency List)
+    - [Undirected](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts/DataStructures/Graphs/UndirectedGraph.cs) (implemented using Adjacency List) and [tests](https://github.com/AnthonyArzola/CoreConcepts/blob/master/CoreConcepts.Tests/DataStructures/Graphs/UndirectedGraphTests.cs)
   - Min Heap (coming soon!)
   - Max Heap (coming soon!)
 
